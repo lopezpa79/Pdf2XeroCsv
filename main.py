@@ -244,7 +244,7 @@ class InvoiceExtractorApp(ctk.CTk):
 
     def save_csv(self, all_rows: list):
         """Asks the user where to save the final CSV file."""
-        timestamp = datetime.now().strftime("%Y-%m-%d-%hh-%mm-%ss")
+        timestamp = datetime.now().strftime("%Y-%m-%d")
         save_path = filedialog.asksaveasfilename(
             title="Save Xero Import File",
             defaultextension=".csv",
